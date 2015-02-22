@@ -24,4 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)ButtonClick:(id)sender {
+    
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    df.dateFormat = @"dd-MM-yyyy";
+    NSLog(@"Date : %@",[df stringFromDate:[self.getDate date]]);
+    
+}
 @end
